@@ -2,10 +2,9 @@ import pytest
 
 from codexample.functions import return_value, raise_error
 
-
 def test_return_value():
     value = 5
-    assert return_value(value) == value
+    assert return_value(value) == 6
 
 def test_zero_division():
     with pytest.raises(ZeroDivisionError):

@@ -2,7 +2,6 @@
 def return_value(value):
     return value
 
-
 def raise_error(msg_kw):
     raise ValueError(f"Exception {msg_kw} raised")
 
