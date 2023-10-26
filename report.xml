@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="4" time="0.330" timestamp="2023-10-26T01:04:30.463995" hostname="NA"><testcase classname="tests.test_assert1" name="test_return_value" time="0.002"><failure message="assert 5 == 6&#10; +  where 5 = return_value(5)">def test_return_value():
+        value = 5
+&gt;       assert return_value(value) == 6
+E       assert 5 == 6
+E        +  where 5 = return_value(5)
+
+tests\test_assert1.py:7: AssertionError</failure></testcase><testcase classname="tests.test_assert1" name="test_zero_division" time="0.002" /><testcase classname="tests.test_assert1" name="test_recursion_depth" time="0.004" /><testcase classname="tests.test_assert1" name="test_match" time="0.003" /></testsuite></testsuites>

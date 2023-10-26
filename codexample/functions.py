@@ -10,3 +10,18 @@ def factorielle(n):
         return 1
     else:
         return n  * factorielle(n-1)
+
+def consulta():
+    import mysql.connector
+
+    cnx = mysql.connector.connect(user='scott', database='employees')
+    cursor = cnx.cursor()
+
+    query = ("SELECT nombreFROM liga where puesto=3")
+    data = cursor.execute(query)
+    print(data)
+     
+
+    cursor.close()
+    cnx.close()
+    return print(data)
